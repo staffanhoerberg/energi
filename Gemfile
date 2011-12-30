@@ -9,9 +9,7 @@ gem 'thin'
 gem 'sprockets'
 gem 'sprockets-urlrewriter'
 gem 'uglifier'
-gem 'therubyracer'
 gem 'coffee-script'
-gem 'less'
 
 #gem "mail"
 
@@ -44,5 +42,4 @@ end
 group :test do
 	gem 'rspec'
 	gem 'capybara'
-	gem 'capybara-webkit'
 end
