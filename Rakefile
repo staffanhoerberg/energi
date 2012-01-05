@@ -10,6 +10,17 @@ task :console do
 	exec "pry -r ./config/environment -r ./lib/models"
 end
 
+namespace :db do
+  task :migrate => :environment do
+    require 'dm-migrations'
+    DataMapper.auto_upgrade!
+  end
+  task :reset => :environment do
+    require 'dm-migrations'
+    DataMapper.auto_migrate!
+  end
+end
+
 begin
   require 'rspec/core/rake_task'
   RSpec::Core::RakeTask.new(:spec) do |spec|

@@ -3,6 +3,7 @@ require 'bundler/setup'
 Dir["./lib/*.rb"].each { |file| require file }
 require './config/environment'
 
+
 require 'sprockets'
 require 'sprockets-urlrewriter'
 require 'uglifier'

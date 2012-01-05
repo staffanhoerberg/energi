@@ -15,7 +15,8 @@ gem 'coffee-script'
 
 #gem 'pg'
 #gem 'pg-migrator'
-#gem 'datamapper'
+gem 'datamapper'
+gem "dm-sqlite-adapter"
 #gem 'dm-postgres-adapter'
 #gem "dm-sweatshop"
 #gem "randexp"

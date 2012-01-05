@@ -1,0 +1,12 @@
+%h1 
+	Nysida
+
+-@test.each do |t|
+	%p
+		=t.id
+		&nbsp;
+		&nbsp;
+		%a{:href=>"/#{t.id}"}= t.namn
+	
+	
+
